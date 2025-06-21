@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Произвольное название страницы</title>
+    <meta name="description" content="Произвольная страница сайта для задания 2.1">
+</head>
+
+<body>
+    <header>
+        <h1>Внутренние ссылки:</h1>
+        <nav>
+            <h3>Перейти к:</h3>
+            <ul>
+                <li>
+                    <a href="#section1">разделу 1</a>
+                <li>
+                    <a href="#section2">разделу 2</a>
+                </li>
+                <li>
+                    <a href="#section3">разделу 3</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article id="section1">
+            <h1>Раздел 1</h1>
+            <p>Первый раздел, тут происходит всякое</p>
+        </article>
+        <article id="section2">
+            <h1>Раздел 2</h1>
+            <p>Второй раздел, тут происходит всякое всякое</p>
+        </article>
+        <article id="section3">
+            <h1>Раздел 3</h1>
+            <p>Третий раздел, тут происходит всякое всякое всякое</p>
+        </article>
+    </section>
+
+    <h1>Внешняя ссылка:</h1>
+    <a href="index2.html">Перейти на другую страницу</a>
+
+    <h1>Нумерованный список</h1>
+    <ol>
+        <li>Пункт 1</li>
+        <li>Пункт 2</li>
+        <li>Пункт 3</li>
+    </ol>
+
+    <table aria-label="Таблица с заголовком">
+        <caption style="font-weight: bold; font-size: larger;">Таблица данных по суммам</caption>
+        <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th colspan="2">Какие-то данные</th>
+            </tr>
+            <tr>
+                <th>№</th>
+                <th>Сумма 1</th>
+                <th>Сумма 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>5</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>10</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Итого</th>
+                <td>15</td>
+                <td>20</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
