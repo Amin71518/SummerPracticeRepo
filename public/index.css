@@ -1,0 +1,17 @@
+h1 {
+    font-size: 26px;
+    color: #0f0f0f;
+    text-transform: uppercase ;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+section article:not(:last-child) {
+    margin-bottom: 16px;
+}
+section article {
+    background-color: #cecece;
+}

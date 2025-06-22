@@ -5,7 +5,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.sendFile(`${__dirname}/public/task2.1/index.html`);
+  res.sendFile(`${__dirname}/public/index.html`);
 });
 
 
