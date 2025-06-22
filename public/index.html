@@ -1,90 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <title>Произвольное название страницы</title>
-    <meta name="description" content="Произвольная страница сайта для задания 2.1">
+    <title>Привет, мир!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Первая учебная HTML-страница">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header>
-        <h1>Внутренние ссылки:</h1>
-        <nav>
-            <h3>Перейти к:</h3>
-            <ul>
-                <li>
-                    <a href="#section1">разделу 1</a>
-                <li>
-                    <a href="#section2">разделу 2</a>
-                </li>
-                <li>
-                    <a href="#section3">разделу 3</a>
-                </li>
-            </ul>
-        </nav>
+    <header id="mainHeader">
+        <div class="d-flex flex-middle-between w-100">
+            <nav id="mainNav">
+                <a href="#" class="nav-item">
+                    Главная
+                </a>
+                <a href="#" class="nav-item">
+                    Новости
+                </a>
+                <a href="#" class="nav-item">
+                    О нас
+                </a>
+                <a href="#" class="nav-item">
+                    Контакты
+                </a>
+            </nav>
+            <form class="search-form">
+                <label class="input-wrap">
+                    <input type="text" name="search" placeholder="Введите фразу для поиска...">
+                </label>
+                <button class="submit-btn">Найти</button>
+            </form>
+        </div>
     </header>
+    <main>
+        <section class="leftSide">
+            <h1>Новости компании</h1>
+            <section>
+                <article>
+                    <h1>В головном офисе компании, на 
+                        первом этаже, прорвало трубу
+                    </h1>
+                    <p>Спасайтесь кто может!!!</p>
+                </article>
+                    
+                <article>
+                    <h1>Компания готовится к Новому Году
+                    </h1>
+                    <p>Скоро Новый Год и мы готовим для всех подарки!</p>
+                </article>
 
-    <section>
-        <article id="section1">
-            <h1>Раздел 1</h1>
-            <p>Первый раздел, тут происходит всякое</p>
-        </article>
-        <article id="section2">
-            <h1>Раздел 2</h1>
-            <p>Второй раздел, тут происходит всякое всякое</p>
-        </article>
-        <article id="section3">
-            <h1>Раздел 3</h1>
-            <p>Третий раздел, тут происходит всякое всякое всякое</p>
-        </article>
-    </section>
-
-    <h1>Внешняя ссылка:</h1>
-    <a href="index2.html">Перейти на другую страницу</a>
-
-    <h1>Нумерованный список</h1>
-    <ol>
-        <li>Пункт 1</li>
-        <li>Пункт 2</li>
-        <li>Пункт 3</li>
-    </ol>
-
-    <table aria-label="Таблица с заголовком">
-        <caption style="font-weight: bold; font-size: larger;">Таблица данных по суммам</caption>
-        <thead>
-            <tr>
-                <th>&nbsp;</th>
-                <th colspan="2">Какие-то данные</th>
-            </tr>
-            <tr>
-                <th>№</th>
-                <th>Сумма 1</th>
-                <th>Сумма 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>5</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>10</td>
-                <td>15</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>Итого</th>
-                <td>15</td>
-                <td>20</td>
-            </tr>
-        </tfoot>
-    </table>
-
+                <article>
+                    <h1>Массовые сокращения
+                    </h1>
+                    <p>Денег нет, но вы держитесь!</p>
+                </article>
+            </section>
+        </section>
+        <section class="rightSide">
+            <article>
+                <h2>Моя первая статья</h2>
+                <p>
+                    Это так здорово учиться создавать прекрасный HTML!
+                </p>
+            </article>
+            <section>
+                <h2>Похожие статьи</h2>
+                <div class="related-articles">
+                    <article>
+                        <h1>
+                            <a href="#">Статья 1</a>
+                        </h1>
+                        <p>Статья про что-либо</p>
+                    </article>
+                    <article>
+                        <h1>
+                            <a href="#">Статья 2</a>
+                        </h1>
+                        <p>Статья про что-либо</p>
+                    </article>
+                    <article>
+                        <h1>
+                            <a href="#">Статья 3</a>
+                        </h1>
+                        <p>Статья про что-либо</p>
+                    </article>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer id="mainFoter">
+        <span class="links-label">Мы в соцсетях:</span>
+        <nav id="footerNav">
+            <a href="#" class="nav-item">
+                Facebook
+            </a>
+            <a href="#" class="nav-item">
+                VKontakte
+            </a>
+            <a href="#" class="nav-item">
+                Mail.ru
+            </a>
+            <a href="#" class="nav-item">
+                Rambler
+            </a>
+        </nav>
+    </footer>
 </body>
 
 </html>
