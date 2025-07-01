@@ -1,0 +1,61 @@
+.count-container {
+  background: linear-gradient(135deg, #5c9cdd 0%, #70d481 100%);
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(60, 90, 130, 0.12);
+  padding: 32px 40px;
+  max-width: 350px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.count-title {
+  color: #2b3a55;
+  margin-bottom: 18px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.count-btn {
+  background: linear-gradient(90deg, #1e58c5, #dd2626);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 18px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.count-btn:hover {
+  background: linear-gradient(90deg, #38d9a9, #4f8cff);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.user-form {
+  margin-bottom: 20px;
+}
+
+.user-input {
+  padding: 8px 16px;
+  border: 1px solid #b0bac9;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-right: 10px;
+  transition: border 0.2s;
+}
+
+.user-input:focus {
+  border-color: #4f8cff;
+  outline: none;
+}
+
+.greeting {
+  color: #ff0000;
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
